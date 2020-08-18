@@ -18,7 +18,7 @@ RUN apt-get install -y software-properties-common
 # RUN add-apt-repository universe
 RUN apt-get install bibtex2html -y
 RUN apt-get install npm nodejs -y
-RUN apt-get install git
+RUN apt-get install git -y
 RUN git clone https://gitlab.gwdg.de/nam/gcmsgen.git
 WORKDIR /home/app/gcmsgen
 RUN npm install
